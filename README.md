@@ -33,27 +33,27 @@ The columns "APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "OR
 This neural network model has two hidden layers: one has 80 neuros and the other has 30 neurons.
 The activation functions are relu and sigmoid.
 
-![Neurons, layers and activation functions](./Images/image1.PNG)
+![Neurons, layers and activation functions](./images/image1.PNG)
 
 - Were you able to achieve the target model performance?
 
 The target model performance was not achieved because the target predictive accuracy was lower than 75%.
 
-![Accuracy](./Images/image2.PNG)
+![Accuracy](./images/image2.PNG)
 
 - What steps did you take to try and increase model performance?
 
 In order to try to increase model performance a different activation function was used, however, the target model performance was not achieved.
 
-![Different activation function: tanh](./Images/image3.PNG)
+![Different activation function: tanh](./images/image3.PNG)
 
-![Second attempt accuracy](./Images/image4.PNG)
+![Second attempt accuracy](./images/image4.PNG)
 
 Another attempt was made by adding a third hidden layer but the target predictive accuracy was lower than 75%.
 
-![Adding a third hidden layer: tanh](./Images/image5.PNG)
+![Adding a third hidden layer: tanh](./images/image5.PNG)
 
-![Third attempt accuracy](./Images/image6.PNG)
+![Third attempt accuracy](./images/image6.PNG)
 
 we applied bucketing to the feature ASK_AMT and organized the different values by intervals.
 We increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
