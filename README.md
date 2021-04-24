@@ -2,64 +2,54 @@
 
 ## Overview of the analysis:
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Explain the purpose of this analysis.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The purpose of this project is to use machine learning and neural networks in order to create a classifier to predict whether applicants will be successful if funded by a non-profit foundation.
+
 
 ## Results:
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Using bulleted lists and images to support your answers, address the following questions.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Data Preprocessing
 
-- What variable(s) are considered the target(s) for your model?
+**- What variable(s) are considered the target(s) for your model?**
 
 The column "IS_SUCCESSFUL" was considered the target for this model. It contains information whether the money was used effectively or not.
 
-- What variable(s) are considered to be the features for your model?
+**- What variable(s) are considered to be the features for your model?**
 
 The columns "APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION", "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", and "ASK_AMT" are considered to be the features for this model.
 
-- What variable(s) are neither targets nor features, and should be removed from the input data?
+**- What variable(s) are neither targets nor features, and should be removed from the input data?**
 
 "EIN" and "NAME" are identification columns and were removed from the input data.
 
 
 ### Compiling, Training, and Evaluating the Model
 
-- How many neurons, layers, and activation functions did you select for your neural network model, and why?
+**- How many neurons, layers, and activation functions did you select for your neural network model, and why?**
 
 This neural network model has two hidden layers: one has 80 neuros and the other has 30 neurons.
 The activation functions are relu and sigmoid.
 
 ![Neurons, layers and activation functions](./images/image1.PNG)
 
-- Were you able to achieve the target model performance?
+**- Were you able to achieve the target model performance?**
 
 The target model performance was not achieved because the target predictive accuracy was lower than 75%.
 
 ![Accuracy](./images/image2.PNG)
 
-- What steps did you take to try and increase model performance?
+**- What steps did you take to try and increase model performance?**
 
-In order to try to increase model performance a different activation function was used, however, the target model performance was not achieved.
+In order to try to increase model performance a different activation function was used (tanh), however, the target model performance was not achieved.
 
 ![Different activation function: tanh](./images/image3.PNG)
 
 ![Second attempt accuracy](./images/image4.PNG)
 
-Another attempt was made by adding a third hidden layer but the target predictive accuracy was lower than 75%.
+Another attempt was made by adding a third hidden layer and increasing the number of neurons, however, the target predictive accuracy was lower than 75%.
 
 ![Adding a third hidden layer: tanh](./images/image5.PNG)
 
 ![Third attempt accuracy](./images/image6.PNG)
-
-we applied bucketing to the feature ASK_AMT and organized the different values by intervals.
-We increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
-We also tried a different activation function (tanh) but none of these steps helped improve the model's performance.
-
-For the trial to improve the accuracy of the model three layers were added and the number of neurons was increased as noted in the images below. I found that adding layers did not improve the accuracy, rather it stayed the same about 72%. For my last attempt I removed the third layer and increased the neurons to 200 for the first layer and 80 for the second layer. I increased the neurons for each attempt because there was a larger distribution of data points with in each feature.
 
 
 ## Summary: 
